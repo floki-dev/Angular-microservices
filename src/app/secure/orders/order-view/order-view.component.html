@@ -1,0 +1,31 @@
+<div class="d-flex justify-content between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+  <div class="btn-toolbar md-2 mb-md-0">
+    <a routerLink="/orders/create" href="javascript:void(0)" class="btn btn-sm btn-outline-secondary">Add</a>
+  </div>
+</div>
+
+<div class="table-responsive">
+  <table class="table table-striped table-sm">
+    <thead>
+    <tr>
+      <th>#</th>
+      <th>Product Title</th>
+      <th>Price</th>
+      <th>Quantity</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let orderItem of orderItems">
+      <td>{{orderItem.id}}</td>
+      <td>{{orderItem.product_title}}</td>
+      <td>{{orderItem.price}}</td>
+      <td>{{orderItem.quantity}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<!--<app-paginator-->
+<!--  [lastPage]="lastPage"-->
+<!--  (pageChange)="refresh($event)"-->
+<!--&gt;</app-paginator>-->
