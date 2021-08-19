@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  api: 'https://myexample.com/api'
+  api: 'https://myexample.com/api/admin'
 };
 
 /*
